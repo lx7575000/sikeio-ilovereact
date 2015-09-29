@@ -1,0 +1,204 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+/*COMMON CSS*/
+
+* {
+  position: relative;
+}
+
+div, span {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+  align-content: flex-start;
+
+  border: 0 solid black;
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body{
+  /*background-color: rgba(255, 0, 0, 0.3);*/
+  background-color: #1f1e34;
+  color: #fff;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2{
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p{
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #fff;
+}
+
+a:hover{
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+
+/*Layout CSS*/
+
+.section {
+  /*background-color: rgba(255, 0, 0, 0.3);*/
+  border: 2px solid #fff;
+  /*height: 100%;*/
+  height: 100vh;
+}
+
+
+.section2, .section3, .section4{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Header CSS*/
+
+.intro-section {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-navbar{
+  /*display: flex;*/
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-navbar a{
+  padding-left: 44px;
+}
+
+#header img{
+  padding: 0;
+  margin-top: 142px;
+}
+
+#header h1{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+}
+
+
+/*SECTION2 & 3 CSS*/
+
+.iphone-demo {
+  flex-grow: 1;
+  align-self: stretch;
+  flex-basis: 50%;
+  position: relative;
+
+  margin-top: 5%;
+  /*background-color: rgba(255,0,0,0.3);*/
+}
+
+.feature-description {
+  flex-grow: 1;
+  align-self: stretch;
+  flex-basis: 50%;
+  /*background-color: rgba(0,255,0,0.3);*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+
+
+}
+
+.feature-description > p{
+  width: 80%;
+}
+
+.iphone-image{
+  height: 600px;
+  width: 300px;
+  
+  margin: 0 auto;
+  position: relative;
+}
+
+.content{
+  height: 450px;
+  width: 255px;
+  position: absolute;
+
+  top:90px;
+  left: 25px;
+}
+
+/*SECTION 4 CSS*/
+
+.section4{
+  overflow: hidden;
+  position: relative;
+}
+
+#android-robot{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  transform: rotate(-45deg) translate(-8%, 65%);
+}
+
+/*SIDER BAR CSS*/
+#slider-control {
+  padding: 3px;
+}
+
+#slider-control {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
